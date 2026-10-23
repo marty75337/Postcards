@@ -1,0 +1,74 @@
+POSTAL HISTORY COLLECTION REGISTER — VERSION 1.2
+
+CONTENTS
+Keep index.html, style.css, app.js, scan-processing.js and seed.js together.
+Keep the vendor folder and both PDF.js files inside it.
+No build process or API key is required. PDF.js is bundled locally.
+
+GITHUB UPDATE
+Export a backup in the existing app first. Upload the contents of this package
+to the SAME repository and branch, replacing existing files. Include vendor/.
+Do not upload the ZIP itself as the website. Keep the existing Pages URL.
+After deployment, reload Safari. Existing records stay in this browser.
+In PH-0002 and PH-0003, choose Images > Process existing uploads.
+No re-uploading of those PDFs is needed.
+
+OPENING THE APP
+This package is ready to put in a separate website repository from your album editor.
+Open the hosted index.html in Safari on your iPad or iPhone. Opening HTML inside
+Files/Quick Look may only preview the file and may not run the app.
+On a computer, opening index.html in a browser can work, but use a stable website
+address for ongoing work so browser storage stays associated with that address.
+This delivery is a source package; it has not been uploaded to your GitHub account.
+
+FIRST RECORD
+PH-0001: Rome to Lille, 21 October 1942, Céline correspondence.
+Both sides have JPEG previews and original cropped PDFs attached.
+Initial catalogue readings are provisional, not an expert certification.
+Transcription and translation are left blank for subsequent work.
+
+EVERYDAY USE
+1. Add item, choose its type and enter a reference and description.
+2. Add JPEG/PNG/WebP scans or PDFs on the Images tab. Maximum 20 MB per file.
+   New uploads generate cropped and straightened JPGs for each PDF page or image.
+   Original files are preserved. Processing stays on the device.
+   Unclear paper edges retain the full image rather than crop into handwriting.
+   Automatic deskew supports up to 14 degrees; perspective correction is not included.
+   Images are rendered at up to 2600 pixels on their longest side.
+   Process existing uploads also retries failures without duplicating successful output.
+   Rotate left / Rotate right turns any image by 90 degrees and saves it.
+   Downloads and printed images use the chosen orientation. PDFs stay unchanged;
+   rotate their processed JPG images. Four turns restore the exact starting image.
+3. Label every attachment so recto, verso, folded and unfolded views are clear.
+4. Enter postal markings, routes, rate evidence and sources in Postal research.
+5. Enter transcription and translation in Letter & translation.
+6. Edit the Album caption, then copy it into your album-page editor.
+7. Export backup regularly. Name it and save the downloaded JSON in Files/iCloud.
+
+SAVING AND TRANSFER
+Data saves automatically in IndexedDB on the current browser and device.
+Wait for Saved on this device before closing. If saving fails, export immediately.
+Clearing browser data, private browsing, or changing the site address can lose or
+separate your records. This is NOT cloud synchronisation.
+A backup includes the complete collection and all attached image/PDF data.
+To transfer devices, export on the first device and import on the other.
+Import merges new records and replaces matching record IDs after confirmation.
+Export first if you need to preserve the previous versions of matching records.
+The import limit is 200 MB; very large collections need a future storage upgrade.
+Do not upload collection backup JSON files to a public repository.
+
+PRIVACY
+Added records remain in this browser; the app does not send them to a server.
+The supplied Céline example and PDFs are embedded in seed.js. Anyone who can access
+published app files can access that example. Private repository status does not
+by itself protect the running website. The app has no built-in login.
+
+PRINTING
+Print record prints the selected record and its image attachments on A4.
+This is a catalogue summary, not a physical-size exhibition mounting page.
+PDF originals are listed, not printed inside the summary; download them separately.
+
+VERIFICATION
+JavaScript syntax checked. Synthetic scans exercised at five skew angles.
+Blank/full-frame safety, original retention, retry failure handling and duplicate
+prevention tested. Actual Safari/PDF rendering has not been browser-tested here.
